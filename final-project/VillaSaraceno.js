@@ -7,9 +7,6 @@ var domain3 = DOMAIN([[0,1],[0,1],[0,1]])([7,7,7]);
 
 
 
-
-
-
 /*************************************************MAP***************************************************/
 var a=POLYLINE([[0,0],[0,5.7],[17.4,5.7]]);
 var b=POLYLINE([[17.4,5.7],[17.4,4.5],[23.4,4.5]]);
@@ -97,7 +94,7 @@ var frontTopWall=STRUCT([top1,top2,top3,top4,top4,top5,top6,top7,top8]);
 /*************Square Front Columns**************/
 
 var lowPart=T([0,2])([2.3,1])(SIMPLEX_GRID([[0.5],[0.5],[0.2]]));
-var body=T([0,1,2])([2.35,0.1,1.2])(SIMPLEX_GRID([[0.4],[0.4],[2]]))
+var body=T([0,1,2])([2.35,0.1,1.2])(SIMPLEX_GRID([[0.4],[0.3],[2]]))
 var topPart=T([2])([2])(lowPart);
 var squareColumn1=STRUCT([lowPart,topPart,body]);
 var squareColumn2=T([0])([1.3])(squareColumn1);
